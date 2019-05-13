@@ -14,7 +14,7 @@ The goal of the game is to find a murder.
 1. Open the command line and navigate to the directory where _StarWars.jar_ is located (/JavaGame/out/artifacts/JavaGame_Jar/).
 1. Run command ``java -jar StarWars.jar`` and enjoy the game
 
-##How to play
+## How to play
 
 The game start with a greeting messeg and info.
 
@@ -25,19 +25,19 @@ The game is created in Czech so the commands, comments and UI is in Czech too.
 
 Every command is executed by enter if the comand require some parameters it will show the error message like "Bylo zadáno příliš mnoho parametrů" it means that you have entered too many parameters
 
-###Map and enviroment
+### Map and enviroment
 
 The enviroment has three floors the main floor, the upper floor and the basement.
 
 The floors and ways are shown in the picture by the diagram.
 ![Map](/Map.png)
 
-###Hints and exit
+### Hints and exit
 
 For hints you can always type ``napoveda``
 Otherwise when you want to leave the game type ``konec`` it means Exit.
 
-####Other commands
+#### Other commands
 1. command Mluv (it means talk)
     1. the command requires the name of character with which you want to talk.
     1. ``mluv name_of_character``
