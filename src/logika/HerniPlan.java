@@ -121,7 +121,9 @@ public class HerniPlan {
         schodistePrizemi.setVychod(schodistePatro);
         sklad.setVychod(kuchyn);
         jidelna.setVychod(chodbaPrizemi);
+        jidelna.setVychod(kuchyn);
         kuchyn.setVychod(chodbaPrizemi);
+        kuchyn.setVychod(jidelna);
         kuchyn.setVychod(sklad);
 
         /*
@@ -155,6 +157,7 @@ public class HerniPlan {
         knihovna.setVychod(chodbaPatro);
         knihovna.setVychod(cvicebnaMagie);
         cvicebnaMagie.setVychod(chodbaPatro);
+        cvicebnaMagie.setVychod(knihovna);
         mistnostInstruktoru.setVychod(chodbaPatro);
 
         aktualniProstor = nadvori;  // hra začíná v domečku
