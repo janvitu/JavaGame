@@ -74,8 +74,8 @@ public class HerniPlan {
          * _____Místnosti suterén_____
          * ###########################
          * */
-        Prostor suteren1            = new Prostor("suteren", "Chodba plná pavučin a slizu");
-        Prostor suteren2            = new Prostor("suteren_dál", "Zapáchající chodba plná zkaženého masa. Po bližším prozkoumání je vidět, že jsou zde jakési skryté dveře a je možnost je otevřít pomocí páky.");
+        Prostor suteren1            = new Prostor("suterén", "Chodba plná pavučin a slizu");
+        Prostor suteren2            = new Prostor("suterén_dál", "Zapáchající chodba plná zkaženého masa. Po bližším prozkoumání je vidět, že jsou zde jakési skryté dveře a je možnost je otevřít pomocí páky.");
         Prostor tajnaMistnost       = new Prostor("tajná_místnost", "Tajná místnost v suterénu (velmi zapáchající). Místnost je plná mrtvol, které nejspíše přišli šachtou.");
 
 
@@ -132,10 +132,10 @@ public class HerniPlan {
          * ###################################
          * */
         suteren1.setVychod(skolnikuvDum);
-        suteren1.setVychod(tajnaMistnost);
         suteren1.setVychod(suteren2);
         suteren2.setVychod(suteren1);
-        tajnaMistnost.setVychod(suteren1);
+        suteren2.setVychod(tajnaMistnost);
+        tajnaMistnost.setVychod(suteren2);
 
         /*
          * #################################
