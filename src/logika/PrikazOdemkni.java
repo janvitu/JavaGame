@@ -2,7 +2,14 @@ package logika;
 
 import java.util.HashSet;
 import java.util.Set;
-
+/**
+ *  Třída PrikazOdekni implementuje příkaz odemkni tak,
+ *  aby hráč mohl odemknou prostor právě tehdy,
+ *  když inventář obsahuje klíč od daného prostoru.
+ *
+ *@author     Jan Vírů
+ *@version    LS 2018/2019
+ */
 public class PrikazOdemkni implements IPrikaz {
     private static final String NAZEV = "odemkni";
     private HerniPlan plan;
@@ -11,10 +18,23 @@ public class PrikazOdemkni implements IPrikaz {
     private Vec klic;
     private Set<Prostor> vychody;
 
+    /**
+     *  Konstruktor třídy
+     *
+     *  @param plan herní plán
+     *
+     */
     public PrikazOdemkni(HerniPlan plan){
         this.plan = plan;
         vychody = new HashSet<>();
     }
+
+    /**
+     * Odemiká prostor a vrací hlášku o zpracování
+     *
+     * @param parametry jako parametr se volí název prostoru, který chce hráč odemknout.
+     * @return zprávy, kterou vypíše hra hráči
+     */
     @Override
     public String provedPrikaz(String... parametry) {
         if (parametry.length == 0) {

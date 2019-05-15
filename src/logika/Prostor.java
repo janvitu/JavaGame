@@ -106,9 +106,9 @@ public class Prostor {
     }
 
     /**
-     * logika postavy
+     * odebrání postavy z prostoru
      * @param jmeno jmeno postavy
-     * @return jmeno postavy nebo null
+     * @return vrací postavu pokud tato postava je v prostoru pokud není vrací null
      */
     public Postava odeberPostavu(String jmeno) {
         if (seznamPostav.containsKey(jmeno)) {

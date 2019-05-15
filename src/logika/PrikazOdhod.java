@@ -13,7 +13,10 @@ public class PrikazOdhod implements IPrikaz {
     private HerniPlan plan;
 
     /**
-     *  Konstruktor
+     *  Konstruktor třídy
+     *
+     *  @param plan herní plán
+     *
      */
     public PrikazOdhod(HerniPlan plan)
     {
