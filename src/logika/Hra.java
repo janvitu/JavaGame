@@ -41,12 +41,12 @@ public class Hra implements IHra {
      *  Vrátí úvodní zprávu pro hráče.
      */
     public String vratUvitani() {
-        return "Vítejte!\n" +
+        return "\n" + "Vítejte!\n" +
                "Toto je příběh o detektivovi, který má za úkol vyřešit sérii vražd na škole dobrodruhů\n" +
                "Tvůj první úkol je hlásit se u ředitele. Pokud to neuděláš, nevadí to, je pouze na tobě jak případ vyřešíš.\n" +
                "Napište 'nápověda', pokud si nevíte rady, jak hrát dál.\n" +
                "\n" +
-               herniPlan.getAktualniProstor().dlouhyPopis();
+               herniPlan.getAktualniProstor().dlouhyPopis() + "\n" + "\033[0;36m";
     }
     
     /**
@@ -64,7 +64,7 @@ public class Hra implements IHra {
             vracenyText = "Prohrál jsi! Obvinil jsi špatnou osobu a ta byla odsouzena k smrti. Na škole vraždy nebyly zastaveny a proto byla škola zavřena.\n" +
                     "Zkus to ještě jednou. Třeba budeš mít více štěstí.";
         }
-        return vracenyText;
+        return "\033[0m" + vracenyText;
     }
     
     /** 
@@ -97,7 +97,7 @@ public class Hra implements IHra {
         else {
             textKVypsani="Nevím co tím myslíš? Tento příkaz neznám. ";
         }
-        return textKVypsani;
+        return "\033[0m" + "\n" + textKVypsani + "\n" + "\033[0;36m";
     }
     
     

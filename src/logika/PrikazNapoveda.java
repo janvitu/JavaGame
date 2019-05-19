@@ -38,7 +38,7 @@ class PrikazNapoveda implements IPrikaz {
         + "Doporučení pro začátek je dostat se do skladu, který je hned vedle kuchyně.\n"
         + "\n"
         + "Můžeš zadat tyto příkazy:\n"
-        + platnePrikazy.vratNazvyPrikazu();
+        + "\033[1;36m" + platnePrikazy.vratNazvyPrikazu() + "\033[0m";
     }
     
      /**

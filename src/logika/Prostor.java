@@ -97,7 +97,11 @@ public class Prostor {
         for (String key : seznamVeci.keySet()) {
             text += key + " ";
         }
-        return text;
+        if (text == ""){
+            return text + "\033[0m";
+        } else {
+            return "\033[1;32m" + text + "\033[0m";
+        }
     }
 
 
@@ -127,7 +131,12 @@ public class Prostor {
         for (String key : seznamPostav.keySet()) {
             text += key + " ";
         }
-        return text;
+        if (text == "") {
+            return text + "\033[0m";
+        } else {
+            return "\033[1;32m" + text + "\033[0m";
+        }
+
     }
 
     /**
@@ -157,7 +166,11 @@ public class Prostor {
         for (String key : seznamVelkychVeci.keySet()) {
             text += key + " ";
         }
-        return text;
+        if (text == "") {
+            return text + "\033[0m";
+        } else {
+            return "\033[1;32m" + text + "\033[0m";
+        }
     }
 
     public void setKlic(Vec klic) {
@@ -232,10 +245,10 @@ public class Prostor {
      * @return Dlouhý popis prostoru
      */
     public String dlouhyPopis() {
-        return "Jsi v mistnosti/prostoru " + popis + "\n"
-                + "Můžeš jít do:" + popisVychodu() + "\n"
+        return "Jsi v mistnosti/prostoru " + "\033[1;33m" + popis + "\033[0m" + "\n"
+                + "Můžeš jít do:" + popisVychodu() +"\n"
                 + "Místnost obsahuje tyto velké věci: " + vratSeznamVelkychVeci() + "\n"
-                + "Věci v místnosti: " + vratSeznamVeci() + "\n"
+                + "Věci v místnosti: " + vratSeznamVeci() +"\n"
                 + "Postavy v místnosti: " + vratSeznamPostav();
     }
 
@@ -250,7 +263,7 @@ public class Prostor {
         for (Prostor sousedni : vychody) {
             vracenyText += " " + sousedni.getNazev();
         }
-        return vracenyText;
+        return "\033[1;32m" + vracenyText + "\033[0m";
     }
 
     /**
