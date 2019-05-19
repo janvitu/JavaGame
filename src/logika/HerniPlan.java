@@ -51,7 +51,7 @@ public class HerniPlan {
         Prostor sklad               = new Prostor("sklad", "Na první pohled si jde všimnout zkrvavené šachty, která s největší pravděpodobností vede do suterénu.");
         Prostor jidelna             = new Prostor("jídelna", "místo pro jezení");
         Prostor kuchyn              = new Prostor("kuchyň", "Je zde hodně zaschlé krve. Mrtvoly odsud musel někdo odtáhnout.");
-        Prostor cvicisteUvnitr      = new Prostor("cvičiště_uvniť", "Vnitřní cvičiště");
+        Prostor cvicisteUvnitr      = new Prostor("cvičiště_uvnitř", "Vnitřní cvičiště");
         Prostor cvicisteVnejsi      = new Prostor("cvičiště_venku", "Venkovní cvičiště");
 
         // zamcene mistnosti
