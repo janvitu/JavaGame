@@ -33,6 +33,7 @@ Patra, jednotlivé místnosti a propojení mezi místnostmi je vyobrazeno na ná
 ### Napoveda a konec
 
 Pro zobrazení nápovědy stačí snadno napsat příkaz ``nápověda``
+
 Pokud chcete ukončit hru stačí napsat příkaz ``konec``
 
 #### Ostatní příkazy
