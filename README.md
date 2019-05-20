@@ -35,6 +35,7 @@ The floors and ways are shown in the picture by the diagram.
 ### Hints and exit
 
 For hints you can always type ``napoveda``
+
 Otherwise when you want to leave the game type ``konec`` it means Exit.
 
 #### Other commands
