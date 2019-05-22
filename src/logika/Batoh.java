@@ -22,7 +22,7 @@ public class Batoh {
      * @return true pokud je v batohu místo
      */
     public boolean jeVolny(){
-        return (seznam.size() <= VELIKOST);
+        return (seznam.size() < VELIKOST);
     }
 
     /**
