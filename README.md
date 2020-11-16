@@ -12,7 +12,7 @@ The goal of the game is to find a murder.
     1. check simply by entering ``java -version`` in the command line 
         1. If nothing is found download Java [here](https://java.com/en/download/)
 1. Open the command line and navigate to the directory where _StarWars.jar_ is located (/JavaGame/out/artifacts/JavaGame_Jar/).
-1. Run command ``java -jar StarWars.jar`` and enjoy the game
+1. Run command ``java -jar JavaGame.jar`` and enjoy the game
 
 ## How to play
 
